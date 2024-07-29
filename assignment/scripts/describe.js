@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// We create a variable called 'name' and give it a string value of 'Dane'
+// We then check if the variable is equal to 'Mary' without type conversion. If it is, we log to console 'Hi, Mary!'
+// Otherwise, we log to the console 'How do you do?'
 //
 
 //CODE
@@ -45,10 +45,13 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable called 'secret'
+// We create a variable called 'code' and set it to the number 123
+// We then check if code is equal to the number 123
+// If it is, the variable secret is set to the string 'super' and code is set to itself multiplied by 2.
+// We then move on to a different if statement, that checks if the variable code is more than 250
+// If it is, the variable secret is set to the string 'duper'
+// At the end of the code, the variable secret is logged to the console.
 
 //CODE
 /*
@@ -70,10 +73,17 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable called 'isStudent' and set it to the boolean value of true
+// We then create a variable called 'age' and set it to the number 34
+// Next, we create a variable called 'zip' and set it to the number 55407
+/* We create a conditional that checks if isStudent is set to the boolean value true AND zip is greater than 80000
+    If it is, we log to console 'You're a student on the West Coast!'
+    If it isn't, we then check if isStudent is set to the boolean value false OR the variable age is less than 30
+      If it is, we log to console 'What are your hobbies?'
+      If it isn't, we check if isStudent is equal to the boolean value true
+        If it is, we log to console 'Welcome to Prime!'
+        If it isn't, we log to console 'How about the weather?'
+*/
 
 //CODE
 /*
@@ -130,11 +140,17 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - The variable colorOne is supposed to be set to 'blue' and colorTwo is supposed to be set to 'red'
+// Should be:
+// let colorOne = 'blue';
+// let colorOne = 'red';
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+  // FIX - The code below only sets colorOne to 'purple',but it needs to set colorTwo to 'purple' as well.
+  // Needs an addition of colorTwo = 'purple';
   colorOne = 'purple';
 }
 */
@@ -145,8 +161,12 @@ if (mix === true) {
 
 /*
 let temp = 40;
+// FIX - time is supposed to be a variable, not a constant.
+// Should be let time = 4;
 const time = 4;
 
+// FIX - This conditional is only checking if one thing or the other is true. It needs to be checking if they are both true at the same time.
+// Should be if(temp > 39 && time >= 4) {
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -158,8 +178,12 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+// FIX - minAge is supposed to be variable, not constant.
+// Should be let minAge = 21;
 const minAge = 21;
 
+// FIX - the conditional below will prove true even when someone who is 21 tries to enter. It needs to be less than instead of less than or equal to so that the age 21 can be allowed entry.
+// Should be if(minAge < age) {
 if(minAge <= age) {
   console.log('no entry');
 } else {
